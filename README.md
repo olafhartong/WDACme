@@ -1,3 +1,9 @@
+[![license](https://img.shields.io/github/license/olafhartong/WDACme.svg?style=flat-square)](https://github.com/olafhartong/WDACme/blob/master/license.md)
+![Maintenance](https://img.shields.io/maintenance/yes/2022.svg?style=flat-square)
+[![GitHub last commit](https://img.shields.io/github/last-commit/olafhartong/WDACme?style=flat-square)](https://github.com/olafhartong/WDACme/commit/master)
+[![Twitter](https://img.shields.io/twitter/follow/olafhartong.svg?style=social&label=Follow)](https://twitter.com/olafhartong)
+[![Discord Shield](https://discordapp.com/api/guilds/715302469751668787/widget.png?style=shield)](https://discord.gg/B5n6skNTwy)
+
 # WDACme
 A WDAC configuration repository with the sole intention of enriching MDE.
 
@@ -42,7 +48,7 @@ This means that a total of 500 events per 24 hours will be logged and 1 distinct
 
 ### How to use
 
-Obviously every binary file from the internet is trustworthy but make an effort to test it first in a lab.
+Obviously every binary file from the internet is trustworthy, still make an effort to test it first in a lab.
 
 Place the .cip file in C:\Windows\System32\CodeIntegrity\CiPolicies\Active
 
