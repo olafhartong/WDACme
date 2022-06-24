@@ -39,3 +39,13 @@ Please note this table is also sampled as this configuration snippet shows;
 This means that a total of 500 events per 24 hours will be logged and 1 distinct event combination of the File Name, Process Name and Status per 24 hours.
 
 **Also important, this configuration is not enforcing the blocks and will only log events.**
+
+### How to use
+
+Obviously every binary file from the internet is trustworthy but make an effort to test it first in a lab.
+
+Place the .cip file in C:\Windows\System32\CodeIntegrity\CiPolicies\Active
+
+There is great documentation on how to roll it out in production here;
+https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide
+
