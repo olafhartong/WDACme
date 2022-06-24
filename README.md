@@ -10,7 +10,7 @@ This repository contains a Windows Defender Application Control (WDAC) configura
 MDE also logs these events to the DeviceEvents table and exposes them in the ActionType *AppControlCodeIntegrityPolicyAudited*
 
 Please note this table is also sampled as this configuration snippet shows;
-```
+```json
   "capping": {
     "globalCapping": {
       "capping": 500
