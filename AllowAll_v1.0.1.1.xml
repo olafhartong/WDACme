@@ -13,14 +13,7 @@
       <Option>Enabled:Unsigned System Integrity Policy</Option>
     </Rule>
     <Rule>
-      <Option>Enabled:Advanced Boot Options Menu</Option>
-    </Rule>
-    <Rule>
       <Option>Enabled:Update Policy No Reboot</Option>
-    </Rule>
-    <!-- Enable .NET hardening auditing-->
-    <Rule> 
-    <Option>Enabled:Dynamic Code Security</Option> 
     </Rule>
   </Rules>
   <!--EKUS-->
@@ -30,6 +23,7 @@
     <Allow ID="ID_ALLOW_A_1_0" FriendlyName="" FileName="*" />
     <Allow ID="ID_ALLOW_A_2_0" FriendlyName="" FileName="*" />
     <Deny ID="ID_DENY_D_0_0_0" FriendlyName="OriginalFileName test" FileName="rundll32.exe" />
+    <Deny ID="ID_DENY_D_0_0_1" FriendlyName="RDP dll loaded" FileName="termsrv.dll" />
     <Deny ID="ID_DENY_D_1_0_0" FriendlyName="VBA DLLs" FilePath="%OSDRIVE%\Program Files\Microsoft Office\root\vfs\ProgramFilesCommonX86\Microsoft Shared\VBA\*" />
     <Deny ID="ID_DENY_D_1_0_1" FriendlyName="VBA DLLs" FilePath="%OSDRIVE%\Program Files\Microsoft Office\root\vfs\ProgramFilesCommonX64\Microsoft Shared\VBA\*" />
     <Deny ID="ID_DENY_D_1_0_2" FriendlyName="PowerShell" FilePath="%OSDRIVE%\Windows\assembly\NativeImages*" />
@@ -41,7 +35,6 @@
     <Deny ID="ID_DENY_D_1_0_8" FriendlyName="Javascript loaded" FileName="jscript.dll" />
     <Deny ID="ID_DENY_D_1_0_9" FriendlyName="Javascript loaded" FileName="jscript9.dll" />
     <Deny ID="ID_DENY_D_1_1_0" FriendlyName="System driver loaded" FilePath="*.sys" />
-    <Deny ID="ID_DENY_D_1_1_1" FriendlyName="RDP dll loaded" FileName="termsrv.dll" />
     <Deny ID="ID_DENY_D_1_1_1" FriendlyName="WMI ETW" FileName="EventTracingManagement.dll" />
     <Deny ID="ID_DENY_D_1_1_2" FriendlyName="Removable Media" FilePath="%REMOVABLE%\*" />
     <Deny ID="ID_DENY_D_1_1_3" FriendlyName="Removable storage device" FilePath="%HOT%\*" />
@@ -70,7 +63,7 @@
     <Deny ID="ID_DENY_D_1_3_6" FriendlyName="Execution" FileName="cmstplua.dll" />
     <Deny ID="ID_DENY_D_1_3_7" FriendlyName="Execution" FileName="colorui.dll" />
     <Deny ID="ID_DENY_D_1_3_8" FriendlyName="Execution" FilePath="*\wscui.cpl" />
-    <Deny ID="ID_DENY_D_1_3_9" FriendlyName="Phantom Dlls" FilePAth="*\controls.mui.dll" />
+    <Deny ID="ID_DENY_D_1_3_9" FriendlyName="Phantom Dlls" FilePath="*\controls.mui.dll" />
     <Deny ID="ID_DENY_D_1_4_0" FriendlyName="Phantom Dlls" FilePath="*\mscorrc.dll.dll" />
     <Deny ID="ID_DENY_D_1_4_1" FriendlyName="Phantom Dlls" FilePath="*\usoselfhost.dll" />
     <Deny ID="ID_DENY_D_1_4_2" FriendlyName="Phantom Dlls" FilePath="*\api-ms-win-core-winrt-roparameterizediid-l1-1-0.dll" />
@@ -155,12 +148,11 @@
         <FileRulesRef>
           <FileRuleRef RuleID="ID_ALLOW_A_2_0" />
           <FileRuleRef RuleID="ID_DENY_D_0_0_0" />
-          <FileRuleRef RuleID="ID_DENY_D_0_0_0_1" />
+          <FileRuleRef RuleID="ID_DENY_D_0_0_1" />
           <FileRuleRef RuleID="ID_DENY_D_1_0_0" />
           <FileRuleRef RuleID="ID_DENY_D_1_0_1" />
           <FileRuleRef RuleID="ID_DENY_D_1_0_2" />
           <FileRuleRef RuleID="ID_DENY_D_1_0_3" />
-          <FileRuleRef RuleID="ID_DENY_D_1_0_3_1" />
           <FileRuleRef RuleID="ID_DENY_D_1_0_4" />
           <FileRuleRef RuleID="ID_DENY_D_1_0_5" />
           <FileRuleRef RuleID="ID_DENY_D_1_0_6" />
@@ -285,7 +277,7 @@
     </Setting>
     <Setting Provider="PolicyInfo" Key="Information" ValueName="Id">
       <Value>
-        <String>WDACme-0x42</String>
+        <String>0x42</String>
       </Value>
     </Setting>
   </Settings>
