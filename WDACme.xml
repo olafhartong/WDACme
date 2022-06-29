@@ -131,6 +131,13 @@
     <Deny ID="ID_DENY_D_2_0_4" FriendlyName="Python" FileName="py.exe" />
     <Deny ID="ID_DENY_D_2_0_5" FriendlyName="AdExplorer" FileName="AdExp" />
     <Deny ID="ID_DENY_D_2_0_6" FriendlyName="PsExec" FileName="psexec.c" />
+    <Deny ID="ID_DENY_D_2_0_7" FriendlyName="AADinternals" FileName="BouncyCastle.Crypto.dll" />
+    <Deny ID="ID_DENY_D_2_0_8" FriendlyName="AADinternals" FileName="PTASpy.dll" />
+    <Deny ID="ID_DENY_D_2_0_9" FriendlyName="AADinternals" FileName="Win32Ntv.dll" />
+    <Deny ID="ID_DENY_D_2_1_0" FriendlyName="AADinternals" FileName="DSInternals.Replication.dll" />
+    <Deny ID="ID_DENY_D_2_1_1" FriendlyName="AADinternals" FileName="DSInternals.Replication.Interop.dll" />
+    <Deny ID="ID_DENY_D_2_1_2" FriendlyName="AADinternals" FileName="DSInternals.Replication.Model.dll" />
+    <Deny ID="ID_DENY_D_2_1_3" FriendlyName="AADinternals" FileName="NDceRpc.Microsoft.dll" />
   </FileRules>
   <!--Signers-->
   <Signers />
@@ -260,6 +267,13 @@
           <FileRuleRef RuleID="ID_DENY_D_2_0_4" />
           <FileRuleRef RuleID="ID_DENY_D_2_0_5" />
           <FileRuleRef RuleID="ID_DENY_D_2_0_6" />
+          <FileRuleRef RuleID="ID_DENY_D_2_0_7" />
+          <FileRuleRef RuleID="ID_DENY_D_2_0_8" />
+          <FileRuleRef RuleID="ID_DENY_D_2_0_9" />
+          <FileRuleRef RuleID="ID_DENY_D_2_1_0" />
+          <FileRuleRef RuleID="ID_DENY_D_2_1_1" />
+          <FileRuleRef RuleID="ID_DENY_D_2_1_2" />
+          <FileRuleRef RuleID="ID_DENY_D_2_1_3" />
         </FileRulesRef>
       </ProductSigners>
     </SigningScenario>
