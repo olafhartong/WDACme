@@ -138,6 +138,7 @@
     <Deny ID="ID_DENY_D_2_1_1" FriendlyName="AADinternals" FileName="DSInternals.Replication.Interop.dll" />
     <Deny ID="ID_DENY_D_2_1_2" FriendlyName="AADinternals" FileName="DSInternals.Replication.Model.dll" />
     <Deny ID="ID_DENY_D_2_1_3" FriendlyName="AADinternals" FileName="NDceRpc.Microsoft.dll" />
+    <Deny ID="ID_DENY_D_2_1_4" FriendlyName="Load from mounted image" FilePath="\device\CdRom*" />
   </FileRules>
   <!--Signers-->
   <Signers />
@@ -274,6 +275,7 @@
           <FileRuleRef RuleID="ID_DENY_D_2_1_1" />
           <FileRuleRef RuleID="ID_DENY_D_2_1_2" />
           <FileRuleRef RuleID="ID_DENY_D_2_1_3" />
+          <FileRuleRef RuleID="ID_DENY_D_2_1_4" />
         </FileRulesRef>
       </ProductSigners>
     </SigningScenario>
