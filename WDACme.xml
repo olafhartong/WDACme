@@ -10,9 +10,6 @@
       <Option>Enabled:Audit Mode</Option>
     </Rule>
     <Rule>
-      <Option>Enabled:Unsigned System Integrity Policy</Option>
-    </Rule>
-    <Rule>
       <Option>Enabled:Update Policy No Reboot</Option>
     </Rule>
   </Rules>
@@ -143,7 +140,7 @@
     <Deny ID="ID_DENY_D_2_1_6" FriendlyName="Remote Procedure Call Runtime" FilePath="rpcrt4.dll" />
     <Deny ID="ID_DENY_D_2_1_7" FriendlyName="Windows HTTP Services" FilePath="winhttp.dll" />
     <Deny ID="ID_DENY_D_2_1_8" FriendlyName="Windows Sockets Helper DLL" FilePath="wshbth.dll" />
-    <Deny ID="ID_DENY_D_2_1_9" FriendlyName="Microsoft COM for Windows" FilePath="combase.dll" />
+    <Deny ID="ID_DENY_D_2_1_9" FriendlyName="Windows NT CRT DLL" FilePath="msvcrt.dll" />
     <Deny ID="ID_DENY_D_2_2_0" FriendlyName="Microsoft C Runtime Library" FilePath="msvcp_win.dll" />
   </FileRules>
   <!--Signers-->
