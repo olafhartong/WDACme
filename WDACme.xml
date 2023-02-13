@@ -139,6 +139,12 @@
     <Deny ID="ID_DENY_D_2_1_2" FriendlyName="AADinternals" FileName="DSInternals.Replication.Model.dll" />
     <Deny ID="ID_DENY_D_2_1_3" FriendlyName="AADinternals" FileName="NDceRpc.Microsoft.dll" />
     <Deny ID="ID_DENY_D_2_1_4" FriendlyName="Load from mounted image" FilePath="\device\CdRom*" />
+    <Deny ID="ID_DENY_D_2_1_5" FriendlyName="Windows Socket 2.0 32-Bit DLL" FilePath="ws2_32.dll" />
+    <Deny ID="ID_DENY_D_2_1_6" FriendlyName="Remote Procedure Call Runtime" FilePath="rpcrt4.dll" />
+    <Deny ID="ID_DENY_D_2_1_7" FriendlyName="Windows HTTP Services" FilePath="winhttp.dll" />
+    <Deny ID="ID_DENY_D_2_1_8" FriendlyName="Windows Sockets Helper DLL" FilePath="wshbth.dll" />
+    <Deny ID="ID_DENY_D_2_1_9" FriendlyName="Microsoft COM for Windows" FilePath="combase.dll" />
+    <Deny ID="ID_DENY_D_2_2_0" FriendlyName="Microsoft C Runtime Library" FilePath="msvcp_win.dll" />
   </FileRules>
   <!--Signers-->
   <Signers />
@@ -276,6 +282,12 @@
           <FileRuleRef RuleID="ID_DENY_D_2_1_2" />
           <FileRuleRef RuleID="ID_DENY_D_2_1_3" />
           <FileRuleRef RuleID="ID_DENY_D_2_1_4" />
+          <FileRuleRef RuleID="ID_DENY_D_2_1_5" />
+          <FileRuleRef RuleID="ID_DENY_D_2_1_6" />
+          <FileRuleRef RuleID="ID_DENY_D_2_1_7" />
+          <FileRuleRef RuleID="ID_DENY_D_2_1_8" />
+          <FileRuleRef RuleID="ID_DENY_D_2_1_9" />
+          <FileRuleRef RuleID="ID_DENY_D_2_2_0" />
         </FileRulesRef>
       </ProductSigners>
     </SigningScenario>
