@@ -142,6 +142,8 @@
     <Deny ID="ID_DENY_D_2_1_8" FriendlyName="Windows Sockets Helper DLL" FilePath="wshbth.dll" />
     <Deny ID="ID_DENY_D_2_1_9" FriendlyName="Windows NT CRT DLL" FilePath="msvcrt.dll" />
     <Deny ID="ID_DENY_D_2_2_0" FriendlyName="Microsoft C Runtime Library" FilePath="msvcp_win.dll" />
+    <Deny ID="ID_DENY_D_2_2_1" FriendlyName="Request PRT via MicrosoftAccountTokenProvider.dll" FilePath="%SYSTEM32%\MicrosoftAccountTokenProvider.dll" />
+    <Deny ID="ID_DENY_D_2_2_2" FriendlyName="WinHello assertion request" FilePath="%SYSTEM32%\ncrypt.dll" />
   </FileRules>
   <!--Signers-->
   <Signers />
@@ -285,6 +287,8 @@
           <FileRuleRef RuleID="ID_DENY_D_2_1_8" />
           <FileRuleRef RuleID="ID_DENY_D_2_1_9" />
           <FileRuleRef RuleID="ID_DENY_D_2_2_0" />
+          <FileRuleRef RuleID="ID_DENY_D_2_2_1" />
+          <FileRuleRef RuleID="ID_DENY_D_2_2_2" />
         </FileRulesRef>
       </ProductSigners>
     </SigningScenario>
